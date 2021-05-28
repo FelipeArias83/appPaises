@@ -20,10 +20,9 @@ paises: Country[] =[];
 
   constructor( private paisService: PaisService) { }
 
-  buscar(){
+  buscar(termino: string){
     this.hayError = false;
- 
-    console.log(this.termino);
+    this.termino = termino;
 
     this.paisService.buscarPais( this.termino )
     .subscribe( (paises) => {
@@ -38,6 +37,11 @@ paises: Country[] =[];
     );
   }
  
+sugerencias(termino:string){
+  this.hayError = false;
+//TODO crear sugerencias
+
+}
 
 }
 

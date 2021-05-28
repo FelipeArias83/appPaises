@@ -10,8 +10,8 @@ import { Country } from '../../interfaces/pais.interfaces';
 })
 
 
-export class PaisTablaComponent  {
 
+export class PaisTablaComponent  {
 
 
   @Input() paises:Country[]= [];
