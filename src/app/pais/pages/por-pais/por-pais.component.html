@@ -5,7 +5,8 @@
     <div class="col">
        <app-pais-input
        (onEnter)="buscar($event)"
-       (onDebounce)="sugerencias($event)">
+       (onDebounce)="sugerencias($event)"
+       placeholder = "Buscar país">
            
        </app-pais-input>
     </div>
@@ -22,30 +23,6 @@
 
 
         <app-pais-tabla [paises]="paises"></app-pais-tabla>
-        <!-- <table class= "table table-hover">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Bandera</th>
-                <th>Nombre</th>
-                <th>Población</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor = "let pais of paises; index as i " >
-                <td>{{i}}</td>
-                <td>
-                    <img class="small-flag" [src]=" pais.flag">
-                </td>
-                <td>{{ pais.name }}</td>
-                <td>{{ pais.population | number}}</td>
-                <td>
-                    <a [routerLink] = "['/pais',pais.alpha2Code]">ver</a>
-                </td>
-            </tr>
-        </tbody>
-    </table> -->
     </div>
 </div>
 
