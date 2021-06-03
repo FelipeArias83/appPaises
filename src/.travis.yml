@@ -1,6 +1,6 @@
 lenguage: node_js
 node_js: 
- - "14.16.1"
+ -  "14.16.1"
 
  branches:
   only:
@@ -15,9 +15,11 @@ addons:
 
 
  cache:
+  npm: false
   yarn: true
   directories:
       - node_modules
+
 
 script:
   - ng build --prod         
